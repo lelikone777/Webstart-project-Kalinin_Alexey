@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+.block {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: grey;
+  height: 400px;
+  padding: 10px;
+}
+
+.item {
+  border: 1px solid;
+  background-color: tomato;
+  padding: 5px;
+}

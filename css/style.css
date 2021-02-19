@@ -7,6 +7,10 @@ body {
   color: #202020;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   background-color: #f1f1f1;
   padding: 22px 0;
@@ -22,13 +26,13 @@ body {
 .logo {
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 14px;
 }
 
 .nav-link {
   color: #202020;
   font-size: 14px;
   font-weight: 400;
-  text-decoration: none;
   margin-left: 11px;
   margin-right: 11px;
 }
@@ -37,7 +41,6 @@ body {
   color: #202020;
   font-size: 14px;
   font-weight: 400;
-  text-decoration: none;
 }
 
 .hero {
@@ -84,10 +87,15 @@ body {
 }
 
 .info-text {
-  font: 16px;
+  font-size: 16px;
   font-weight: 400;
   flex-basis: 45%;
   margin-bottom: 16px;
+}
+
+.type,
+.age {
+  margin-bottom: 0;
 }
 
 .price {
@@ -103,9 +111,8 @@ body {
 }
 
 .favorites {
-  font: 16px;
+  font-size: 16px;
   font-weight: 400;
-  text-decoration: none;
   color: inherit;
 }
 
@@ -115,6 +122,7 @@ body {
   padding: 22px 50px;
   border-radius: 5px;
   border: 2px solid transparent;
+  height: 65px;
 }
 
 .button-primary {
@@ -126,6 +134,4 @@ body {
 .button-outline {
   color: #f89c02;
   border: 2px solid #f89c02;
-  text-decoration: none;
 }
-

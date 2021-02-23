@@ -227,3 +227,31 @@ a {
 }
 
 /* READERS */
+
+.readers {
+  padding: 87px 0 109px;
+}
+
+.readers-container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.readers-title {
+  margin-bottom: 57px;
+  margin-top: 0;
+}
+
+.readers-images {
+  height: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.readers-image {
+  width: 165px;
+  height: 165px;
+  object-fit: cover;
+}

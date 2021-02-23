@@ -2,9 +2,26 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "MuseoCyrl-900";
+  src: url("../fonts/MuseoCyrl-900.woff") format("woff"),
+    url("../fonts/MuseoCyrl-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #202020;
+}
+
+.title {
+  font-family: "MuseoCyrl-900", serif;
+  font-weight: 900;
+  font-size: 54px;
+  margin-bottom: 15px;
+  margin-top: 0;
 }
 
 a {
@@ -65,13 +82,6 @@ a {
   margin-bottom: 22px;
 }
 
-.title {
-  font-size: 54px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  margin-top: 0;
-}
-
 .subtitle {
   display: block;
   font-size: 24px;
@@ -81,6 +91,7 @@ a {
 }
 
 .info {
+  max-width: 510px;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 49px;
@@ -121,7 +132,7 @@ a {
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
-  padding: 20px 50px;
+  padding: 18px 50px;
   border-radius: 5px;
   border: 2px solid transparent;
   height: 60px;

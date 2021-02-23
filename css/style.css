@@ -83,6 +83,7 @@ a {
 }
 
 .subtitle {
+  max-width: 358px;
   display: block;
   font-size: 24px;
   font-weight: 400;
@@ -122,7 +123,13 @@ a {
 }
 
 .favorites {
+  display: block;
+  width: 200px;
+  text-align: right;
+  background-image: url("/img/heart.svg");
+  background-repeat: no-repeat;
   font-size: 16px;
+  line-height: 23px;
   font-weight: 400;
   color: inherit;
 }

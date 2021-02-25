@@ -329,7 +329,7 @@ a {
   list-style: none;
 }
 
-.list-item {
+.list-item:not(:last-child) {
   margin-bottom: 16px;
 }
 

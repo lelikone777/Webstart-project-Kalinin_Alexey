@@ -356,3 +356,9 @@ a {
   border: 1px solid #eeeeee;
   background-color: #ffffff;
 }
+
+@media (max-width: 960px) {
+  .header-container {
+    max-width: 960px;
+  }
+}

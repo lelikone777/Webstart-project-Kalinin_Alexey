@@ -551,6 +551,9 @@ img {
     width: 64px;
     height: 64px;
   }
+  .author-link {
+    font-size: 14px;
+  }
   .author-link span {
     display: none;
   }
@@ -586,6 +589,18 @@ img {
 @media (min-width: 320px) and (max-width: 480px) {
   .hero {
     padding: 49px 0 60px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .author {
+    font-size: 16px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+  .info-text {
+    font-size: 14px;
   }
   .image-block {
     margin-bottom: 43px;

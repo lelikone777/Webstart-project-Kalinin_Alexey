@@ -159,15 +159,19 @@ img {
 }
 
 .favorites {
-  display: block;
-  width: 200px;
-  text-align: right;
-  background-image: url("../img/heart.svg");
-  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 16px;
   line-height: 23px;
   font-weight: 400;
   color: inherit;
+  /* background-image: url("../img/heart.svg");
+  background-repeat: no-repeat; */
+}
+
+.heart-icon {
+  margin-right: 20px;
 }
 
 .buttons {
@@ -433,6 +437,9 @@ img {
     max-width: 100%;
     margin-bottom: 62px;
   }
+  .readers {
+    padding: 74px 0 81px;
+  }
   .readers-images {
     gap: 30px;
   }
@@ -477,11 +484,17 @@ img {
     margin-right: 40px;
     margin-bottom: 60px;
   }
+  .footer {
+    padding-bottom: 75px;
+  }
 }
 
 @media (max-width: 576px) {
   .container {
     width: 90%;
+  }
+  .hero {
+    padding-bottom: 60px;
   }
   .author {
     font-size: 18px;
@@ -503,6 +516,12 @@ img {
     flex-basis: 100%;
     margin-bottom: 19px;
   }
+  .favourites-text {
+    display: none;
+  }
+  .price-tag {
+    margin-right: 28px;
+  }
   .buttons {
     flex-wrap: wrap;
   }
@@ -515,6 +534,9 @@ img {
   }
   .about {
     padding: 61px 0 97px;
+  }
+  .about-title {
+    margin-bottom: 35px;
   }
   .about-book {
     margin-bottom: 70px;
@@ -529,6 +551,9 @@ img {
     width: 64px;
     height: 64px;
   }
+  .author-link span {
+    display: none;
+  }
   .readers {
     padding: 55px 0 68px;
   }
@@ -539,7 +564,9 @@ img {
     width: 145px;
     height: 145px;
   }
-  .requisites, .information, .contacts {
+  .requisites,
+  .information,
+  .contacts {
     flex-basis: 100%;
     margin-bottom: 36px;
     margin-right: 0;
@@ -549,9 +576,44 @@ img {
   }
   .footer-title {
     font-size: 18px;
-    margin-bottom: 32px;  
+    margin-bottom: 32px;
   }
   .footer-link {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .hero {
+    padding: 49px 0 60px;
+  }
+  .image-block {
+    margin-bottom: 43px;
+  }
+  .about {
+    padding-bottom: 54px;
+  }
+  .about-book {
+    margin-bottom: 50px;
+  }
+  .about-author {
+    padding: 32px 22px 44px;
+  }
+  .author-avatar {
+    margin-right: 12px;
+  }
+  .readers {
+    padding: 60px 0;
+  }
+  .readers-images {
+    gap: 15px;
+    justify-content: center;
+  }
+  .readers-image {
+    width: 124px;
+    height: 124px;
+  }
+  .readers-image:nth-child(n + 5) {
+    display: none;
   }
 }

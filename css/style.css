@@ -11,19 +11,24 @@
   font-display: swap;
 }
 
-p,
-h2 {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   color: #202020;
 }
 
+p,
+h2,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 .title {
@@ -44,11 +49,14 @@ a {
   z-index: 1;
 }
 
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
-  max-width: 1140px;
-  margin: auto;
 }
 
 .logo {
@@ -71,6 +79,8 @@ a {
   font-weight: 400;
 }
 
+/* Главная СТРАНИЦА */
+
 .hero {
   padding: 62px 0 71px;
   margin-top: 60px;
@@ -78,8 +88,6 @@ a {
 
 .hero-container {
   display: flex;
-  max-width: 1140px;
-  margin: auto;
   align-items: center;
 }
 
@@ -202,8 +210,6 @@ a {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  max-width: 1140px;
-  margin: auto;
 }
 
 .about-book {
@@ -275,11 +281,6 @@ a {
 
 .readers {
   padding: 87px 0 109px;
-}
-
-.readers-container {
-  max-width: 1140px;
-  margin: auto;
 }
 
 .readers-title {
@@ -357,8 +358,200 @@ a {
   background-color: #ffffff;
 }
 
-@media (max-width: 960px) {
-  .header-container {
+@media (max-width: 1200px) {
+  .container {
     max-width: 960px;
+  }
+  .image-block {
+    min-width: 390px;
+    max-width: 390px;
+    margin-right: 30px;
+  }
+  .about-book {
+    max-width: 367px;
+  }
+  .about-text span {
+    display: none;
+  }
+  .readers {
+    padding: 67px 0 94px;
+  }
+  .readers-images {
+    gap: 24px;
+  }
+  .readers-image {
+    width: 139px;
+    height: 139px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 760px;
+  }
+  .nav {
+    display: none;
+  }
+  .image-block {
+    min-width: 300px;
+    max-width: 300px;
+  }
+  .author {
+    font-size: 22px;
+    margin-bottom: 13px;
+  }
+  .title {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+  .info {
+    margin-bottom: 39px;
+  }
+  .subtitle {
+    margin-bottom: 28px;
+  }
+  .age,
+  .format {
+    flex-grow: 1;
+  }
+  .price {
+    margin-bottom: 39px;
+  }
+  .button {
+    width: 200px;
+    font-size: 14px;
+    padding: 20px 40px;
+  }
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 29px;
+  }
+  .about-container {
+    flex-wrap: wrap;
+  }
+  .about-book {
+    max-width: 100%;
+    margin-bottom: 62px;
+  }
+  .readers-images {
+    gap: 30px;
+  }
+  .readers-image {
+    width: 166px;
+    height: 166px;
+  }
+  .readers-image:nth-child(n + 9) {
+    display: none;
+  }
+  .requisites,
+  .information {
+    margin-right: 65px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+  .hero {
+    padding-top: 40px;
+  }
+  .hero-container {
+    flex-wrap: wrap;
+  }
+  .hero-text {
+    width: 100%;
+  }
+  .image-block {
+    min-width: 100%;
+    margin-bottom: 60px;
+  }
+  .hero-image {
+    width: 100%;
+  }
+  .readers-image:nth-child(n + 7) {
+    display: none;
+  }
+  .requisites,
+  .information {
+    margin-right: 40px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  .author {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .title {
+    font-size: 36px;
+    margin-bottom: 19px;
+  }
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .info {
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+  }
+  .info-text:not(:last-child) {
+    flex-basis: 100%;
+    margin-bottom: 19px;
+  }
+  .buttons {
+    flex-wrap: wrap;
+  }
+  .button {
+    width: 100%;
+  }
+  .button-primary {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .about {
+    padding: 61px 0 97px;
+  }
+  .about-book {
+    margin-bottom: 70px;
+  }
+  .about-author {
+    padding: 54px 44px;
+  }
+  .author-text {
+    font-size: 14px;
+  }
+  .author-avatar {
+    width: 64px;
+    height: 64px;
+  }
+  .readers {
+    padding: 55px 0 68px;
+  }
+  .readers-images {
+    gap: 23px;
+  }
+  .readers-image {
+    width: 145px;
+    height: 145px;
+  }
+  .requisites, .information, .contacts {
+    flex-basis: 100%;
+    margin-bottom: 36px;
+    margin-right: 0;
+  }
+  .contacts {
+    margin-bottom: 0;
+  }
+  .footer-title {
+    font-size: 18px;
+    margin-bottom: 32px;  
+  }
+  .footer-link {
+    font-size: 16px;
   }
 }

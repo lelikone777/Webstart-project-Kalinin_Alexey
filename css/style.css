@@ -539,6 +539,7 @@ img {
     flex-wrap: wrap;
   }
   .button {
+    font-size: 16px;
     width: 100%;
     min-height: 77px;
     display: flex;
@@ -579,7 +580,7 @@ img {
   }
   .readers-image {
     width: 28%;
-    height: 145px;
+    height: 100%;
   }
   .requisites,
   .information,
@@ -650,7 +651,6 @@ img {
   }
   .readers-image {
     width: 44%;
-    min-height: 124px;
   }
   .readers-image:nth-child(n + 5) {
     display: none;
